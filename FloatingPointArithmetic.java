@@ -13,7 +13,7 @@ public class FloatingPointArithmetic {
     private String inputData;
     BigDecimal  compressionCode=BigDecimal.ZERO;
     String output;
-    String compressionCodeFilePath="E:\\Year 3\\Data Compression\\FloatingPoint Arithmetic\\FloatingPoint Arithmetic\\src\\compressionCode.txt";
+    String compressionCodeFilePath="compressionCode.txt";
 
 
 
@@ -262,7 +262,7 @@ public class FloatingPointArithmetic {
                 }
             }
         try{
-            FileWriter writer = new FileWriter("E:\\Year 3\\Data Compression\\FloatingPoint Arithmetic\\FloatingPoint Arithmetic\\src\\output.txt");
+            FileWriter writer = new FileWriter("output.txt");
             for(int i=0;i<outputBuilder.length();i++){
                 writer.write(outputBuilder.charAt(i));
             }
@@ -277,7 +277,7 @@ public class FloatingPointArithmetic {
     public static void main(String[] args){
         String data="";
         try{
-            File fileobject= new File("E:\\Year 3\\Data Compression\\FloatingPoint Arithmetic\\FloatingPoint Arithmetic\\src\\input.txt");
+            File fileobject= new File("input.txt");
             Scanner fileReader= new Scanner(fileobject);
             while(fileReader.hasNextLine()){
                 data+=fileReader.nextLine()+"\n";
